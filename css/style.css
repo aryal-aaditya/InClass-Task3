@@ -1,0 +1,22 @@
+/* Name: Aaditya Aryal
+   Student Number: 8910228
+*/
+/*external css for index.html*/
+body {
+    font: italic small-caps normal 13px/200% Georgia, Helvetica, sans-serif; /*using shorthand property*/
+    /*font-style font-variant font-weight font-size/line-height font-family*/
+
+    background-color:hsla(120,60%,70%,0.3);/*using hsla method*/
+    /*hue-saturation-lightness-alpha*/
+
+    height: 50vh;
+    width: 50vw;
+    min-height: 20vh;
+    max-height: 20vh; /*using viewport units*/
+    /* 50vh or 50 vw means its going to take 50% of height or width of total parent tag dimension*/
+}
+
+body > h2{ /* changing properties of heading 2 in index.html*/
+    color: #f00; /*using 3 digit hex*/
+    font-size: 2em; /*using relative units*/
+}
