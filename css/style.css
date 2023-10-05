@@ -9,14 +9,56 @@ body {
     background-color:hsla(120,60%,70%,0.3);/*using hsla method*/
     /*hue-saturation-lightness-alpha*/
 
-    height: 50vh;
-    width: 50vw;
-    min-height: 20vh;
-    max-height: 20vh; /*using viewport units*/
+    height: 100vh;
+    width: 100vw; /*using viewport units*/
     /* 50vh or 50 vw means its going to take 50% of height or width of total parent tag dimension*/
 }
+body > main{
+    width:70vw;
+    height: 50vh;
+    float: left;
+    background-color: hsl(90, 20%, 70%);
+}
+body > aside{
+    width: 20vw;
+    float: right;
+    height: 50vh;
+    background-color: hsl(180, 20%, 70%);
+}
 
-body > h2{ /* changing properties of heading 2 in index.html*/
+body > main > h2{ /* changing properties of heading 2 in index.html*/
     color: #f00; /*using 3 digit hex*/
     font-size: 2em; /*using relative units*/
+}
+body > footer{
+    clear:both;
+    background-color: hsl(270, 20%, 70%);
+}
+
+body > header{
+    background-color: hsl(360, 20%, 70%);
+}
+
+.structural{
+    padding: 10px;
+    margin: 10px;
+    border-bottom: 3px;
+    border: solid;
+    border-color: blue;
+}
+
+#first{
+    color: rgb(227, 54, 144);
+}
+#second{
+    color: rgb(2, 102, 52);
+}
+
+li > a:hover{
+
+    color: #FFF;
+}
+
+footer p{
+    font-size: smaller;
 }

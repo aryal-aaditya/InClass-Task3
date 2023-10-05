@@ -1,7 +1,7 @@
 <!--
     Name: Aaditya Aryal
     Email: aaryal0228@conestogac.on.ca
-    https://aryal-aaditya.github.io/InClass-Task1/
+    https://aryal-aaditya.github.io/InClass-Task2/
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -15,26 +15,44 @@
     <style>/*using internal css*/
         ul{ 
             list-style-type: circle; /*changing the style of the bullets of list*/
+        }
+        li >a{
             color: rgba(227, 54, 144, 1);/*chaning font color using rgba method*/
             line-height: 4em;/* changing the line height between element of list*/
         }
+        
+        
     </style>
 </head>
 <body>
-    <h1 style="color:olivedrab; font-size: 50px;"> <!--using named color method and abosolute unit for font color and size respectively-->
+    <header class="structural">
+        <h1 style="color:olivedrab; font-size: 50px;"> <!--using named color method and abosolute unit for font color and size respectively-->
         This is Heading 1
-    </h1>
-    <h2>This is heading 2</h2> <!--heading that labels the list -->
-    <ul><!-- unordered list of link taking to other external Website -->
-        <li>
-            <a href="https://www.w3schools.com/" target="_blank" title="W3Schools Website"> W3SCHOOLS</a>
-        </li>
-        <li>
-            <a href="https://www.conestogac.on.ca/" target="_blank" title="Conestoga College Website"> Conestoga College</a>
-        </li>
-    </ul>
-    <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat sequi repellat eum accusamus ipsa praesentium iure. Optio a reprehenderit voluptatibus, rem, odit porro ipsa accusantium, exercitationem nostrum impedit et?
-    </p>
+        </h1>
+    </header>
+    <main class="structural">
+        <h2>This is heading 2</h2> <!--heading that labels the list -->
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam quaerat sequi repellat eum accusamus ipsa praesentium iure. Optio a reprehenderit voluptatibus, rem, odit porro ipsa accusantium, exercitationem nostrum impedit et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis laborum ipsum necessitatibus commodi neque quam, maxime, odit eius earum voluptatum magni autem expedita veniam quae corporis mollitia, sapiente qui harum. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates eveniet tempora fugiat autem, delectus sint suscipit, doloribus perferendis esse vitae quos blanditiis est atque magnam? A necessitatibus similique nisi tenetur!
+        </p>
+        <p id="second">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid suscipit ex iste dolore quo veniam necessitatibus corrupti? Ad, exercitationem. Pariatur id neque tempore eligendi numquam eum vel quaerat dolores corporis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt eveniet omnis repellat dolorem eos in soluta, explicabo aliquam officiis totam nam libero ea nobis quod sed distinctio nihil veritatis dolor.
+        </p>
+    </main>
+    
+    <aside class="structural">
+        <ul><!-- unordered list of link taking to other external Website -->
+            <li>
+                <a href="https://www.w3schools.com/" target="_blank" title="W3Schools Website"> W3SCHOOLS</a>
+            </li>
+            <li>
+                <a href="https://www.conestogac.on.ca/" target="_blank" title="Conestoga College Website"> Conestoga College</a>
+            </li>
+        </ul>
+    </aside>
+    <footer class="structural">
+        <p>&copy; Aaditya Aryal.2023</p>
+    </footer>
+    
 </body>
 </html>
