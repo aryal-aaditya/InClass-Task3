@@ -3,10 +3,10 @@
 */
 /*external css for index.html*/
 body {
-    font: italic small-caps normal 13px/200% Georgia, Helvetica, sans-serif; /*using shorthand property*/
+    font: italic small-caps normal 13px/200% sans-serif; /*using shorthand property*/
     /*font-style font-variant font-weight font-size/line-height font-family*/
 
-    background-color:hsla(120,60%,70%,0.3);/*using hsla method*/
+    background-color:rgba(1, 71, 1, 0.3);/*using hsla method*/
     /*hue-saturation-lightness-alpha*/
 
     height: 100vh;
@@ -15,14 +15,12 @@ body {
 }
 body > main{
     width:70vw;
-    height: 50vh;
     float: left;
     background-color: hsl(90, 20%, 70%);
 }
 body > aside{
     width: 20vw;
     float: right;
-    height: 50vh;
     background-color: hsl(180, 20%, 70%);
 }
 
@@ -54,11 +52,79 @@ body > header{
     color: rgb(2, 102, 52);
 }
 
-li > a:hover{
 
-    color: #FFF;
-}
 
 footer p{
     font-size: smaller;
+}
+
+h1{
+    color:olivedrab;
+    font-size: 50px;
+}
+
+aside ul{ 
+    list-style-type: circle; /*changing the style of the bullets of list*/
+}
+aside li,aside a{
+    color: rgba(227, 54, 144, 1);/*chaning font color using rgba method*/
+    line-height: 4em;/* changing the line height between element of list*/
+}
+aside li a:hover{
+
+    color: #FFF;
+}
+nav li{
+    display: inline;
+    list-style-type: none;
+    padding: 3px;
+}
+nav li a{
+    color: indigo;
+    border: 2px solid indigo;
+    background-color: cornsilk;
+    text-decoration: none;
+    padding: 4px;
+}
+nav li a:hover{
+    color: cornsilk;
+    border-color: cornsilk;
+    background-color: indigo;
+}
+
+form {
+    border: 5px dashed blueviolet;
+    padding: 5px;
+}
+
+input[type="text"], 
+input[type="email"],
+input[type="submit"],
+input[type="select"],
+input[type="option"]{
+    width: 50%;
+    display: block;
+    height: 2em;
+}
+input[type="radio"],
+input[type="checkbox"]{
+    height: 2em;
+    width: 2em;
+}
+
+select, option, label, legend, input[type="submit"]{
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+textarea{
+    width: 50%;
+    display: block;
+}
+
+
+
+fieldset{
+    border: none;
 }
